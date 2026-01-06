@@ -1,0 +1,193 @@
+#tooltip {
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #2c3e50;
+    border: 1px solid #e5e7eb;
+    z-index: 2;
+}
+
+.tooltipTable {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 0px;
+  border-collapse: collapse;
+  table-layout: auto;
+  color: #2c3e50;
+}
+
+.focus {
+  font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+.hover {
+  background-color: #f0f7ff;
+}
+
+.reportTable {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  border: 1px solid #e5e7eb;
+}
+
+th.headerCell {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 12px 16px;
+  border-bottom: 2px solid #1e40af;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.headerCell.dimension {
+  background-color: #2563eb;
+  border-right: 1px solid #1e40af; 
+}
+
+.headerCell.pivot {
+  background-color: #1e3a8a;
+  border-right: 1px solid #1e40af; 
+}
+
+.headerCell.measure {
+  background-color: #3b82f6;
+  border-left: 1px solid #1e40af; 
+}
+
+.headerCell.measure.calculation {
+  background-color: #10b981;
+  border-left: 1px solid #059669;
+}
+
+.headerCell.transposed.dimension {
+  background-color: #2563eb;
+}
+
+.headerCell.transposed.dimension.merged {
+  background-color: #2563eb !important;
+}
+
+.rowCell {
+  vertical-align: middle;
+  padding: 4px 16px;
+  min-height: 21px;
+  border-bottom: 1px solid #e5e7eb; 
+  background-color: #ffffff;
+}
+
+.rowCell:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.rowCell.merged {
+  background-color: #ffffff !important;
+}
+
+.indexCell.transposed {
+  font-weight: 600;
+}
+
+.indexCell.transposed.pivot {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.indexCell.transposed.dimension {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.indexCell.transposed.measure {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.indexCell.transposed.calculation {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.indexCell.transposed.pivot.merged {
+  background-color: #1e3a8a !important;
+}
+
+.indexCell.transposed.dimension.merged {
+  background-color: #2563eb !important;
+}
+
+.indexCell.transposed.measure.merged {
+  background-color: #3b82f6 !important;
+}
+
+.indexCell.transposed.calculation.merged {
+  background-color: #10b981 !important;
+}
+
+.nonNumeric {
+  text-align: left;
+}
+
+.numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.negative {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.estimate {
+  color: #9ca3af !important;
+  font-style: italic;
+}
+
+.singleIndex {
+  padding-left: 24px !important;
+}
+
+.subtotal {
+  font-style: normal;
+  font-weight: 600;
+  background-color: #e5e7eb !important;
+  color: #1f2937;
+}
+
+.total {
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  border-top: 3px solid #1e3a8a !important;
+  font-weight: 700 !important;
+  background-color: #dbeafe;
+  color: #1e3a8a;
+}
+
+.total.transposed {
+  border-top: 0px !important;
+  border-left: 3px solid #1e3a8a !important;
+  background: #dbeafe;
+}
+
+.rectElem.animated {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 4px;
+}
