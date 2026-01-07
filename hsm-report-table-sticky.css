@@ -66,17 +66,17 @@ th.headerCell {
 }
 
 .headerCell.pivot {
-  background-color: #1e3a8a;
+  background-color: #2563eb;
   border-right: 1px solid #1e40af; 
 }
 
 .headerCell.measure {
-  background-color: #3b82f6;
+  background-color: #2563eb;
   border-left: 1px solid #1e40af; 
 }
 
 .headerCell.measure.calculation {
-  background-color: #10b981;
+  background-color: #2563eb;
   border-left: 1px solid #059669;
 }
 
