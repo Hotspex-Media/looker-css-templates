@@ -48,8 +48,8 @@
 }
 
 th.headerCell {
-  background-color: #1e3a8a;
-  color: #ffffff;
+  background-color: #000000;
+  color: #000;
   padding: 12px 16px;
   border-bottom: 2px solid #1e40af;
   font-weight: 600;
@@ -105,7 +105,7 @@ th.headerCell {
 }
 
 .indexCell.transposed.pivot {
-  background-color: #1e3a8a;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -125,7 +125,7 @@ th.headerCell {
 }
 
 .indexCell.transposed.pivot.merged {
-  background-color: #1e3a8a !important;
+  background-color: #000000 !important;
 }
 
 .indexCell.transposed.dimension.merged {
@@ -175,15 +175,15 @@ th.headerCell {
   position: sticky;
   bottom: 0;
   z-index: 3;
-  border-top: 3px solid #1e3a8a !important;
+  border-top: 3px solid #000000 !important;
   font-weight: 700 !important;
-  color: #1e3a8a;
+  color: #000000;
   background-color: #ffffff !important;
 }
 
 .total.transposed {
   border-top: 0px !important;
-  border-left: 3px solid #1e3a8a !important;
+  border-left: 3px solid #000000 !important;
   background: #dbeafe;
 }
 
