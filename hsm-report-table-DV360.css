@@ -1,263 +1,193 @@
-/* ================================================
-   HOTSPEX MEDIA - REPORT TABLE CUSTOM THEME
-   Updated: Green Header + Green Total Row + No Text Transform
-   ================================================ */
+#tooltip {
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #2c3e50;
+    border: 1px solid #e5e7eb;
+    z-index: 2;
+}
 
-/* Main Table Container */
-.report-table-vis {
-  font-family: Roboto, "Noto Sans", "Noto Sans JP", "Noto Sans CJK KR", "Noto Sans Arabic UI", "Noto Sans Devanagari UI", "Noto Sans Hebrew", "Noto Sans Thai UI", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  color: #1a1a1a;
-  background-color: #ffffff;
+.tooltipTable {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 0px;
   border-collapse: collapse;
-  width: 100%;
+  table-layout: auto;
+  color: #2c3e50;
 }
 
-/* Table Wrapper */
-.report-table-wrap {
-  background: #ffffff;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-}
-
-/* ================================================
-   HEADER STYLES
-   ================================================ */
-
-/* Primary Header Row - Main column headers */
-.report-table-vis thead th {
-  background: #A8E6B8;      
-  color: #000;            
+.focus {
   font-weight: 600;
-  font-size: 12px;
-  text-transform: none;       
-  letter-spacing: 0.5px;
-  padding: 14px 12px;
-  text-align: left;
-  border-bottom: 2px solid #1a252f;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  white-space: nowrap;
 }
 
-/* Header Group Row */
-.report-table-vis .header-row th {
-  background: #A8E6B8;       
-  color: #000;                
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: none;       
-  letter-spacing: 0.8px;
-  padding: 16px 12px;
-  border-bottom: 3px solid #e74c3c;
-  border-right: 1px solid rgba(255, 255, 255, 0.15);
+.hidden {
+    display: none;
 }
 
-/* Remove right border from last header cells */
-.report-table-vis thead th:last-child,
-.report-table-vis .header-row th:last-child {
-  border-right: none;
+.hover {
+  background-color: #f0f7ff;
 }
 
-/* Sortable header hover effect */
-.report-table-vis thead th.sortable:hover {
-  background: #91dba4;        
-}
-
-/* ================================================
-   DATA ROWS
-   ================================================ */
-
-.report-table-vis tbody tr {
-  border-bottom: 1px solid #e8e8e8;
-  transition: background-color 0.15s ease;
-}
-
-.report-table-vis tbody tr:nth-child(even) {
-  background-color: #f8f9fa;
-}
-
-.report-table-vis tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-.report-table-vis tbody tr:hover {
-  background-color: #e3f2fd;
-  box-shadow: inset 0 0 0 1px #90caf9;
-}
-
-.report-table-vis tbody td {
-  padding: 12px;
-  font-size: 13px;
+.reportTable {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #2c3e50;
-  border-right: 1px solid #f0f0f0;
-  vertical-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  border: 1px solid #e5e7eb;
 }
 
-.report-table-vis tbody td:last-child {
-  border-right: none;
-}
-
-/* ================================================
-   DIMENSION + MEASURE CELLS
-   ================================================ */
-
-.report-table-vis .dimension-cell {
-  font-weight: 500;
-  color: #34495e;
-  text-align: left;
-}
-
-.report-table-vis tbody td:first-child {
+th.headerCell {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 12px 16px;
+  border-bottom: 2px solid #1e40af;
   font-weight: 600;
-  color: #2c3e50;
-  background-color: rgba(52, 73, 94, 0.02);
-}
-
-.report-table-vis .measure-cell {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-  font-size: 13px;
-}
-
-/* ================================================
-   SUBTOTAL ROWS
-   ================================================ */
-
-.report-table-vis .subtotal-row {
-  background: linear-gradient(180deg, #ecf0f1 0%, #e8ebed 100%);
-  font-weight: 700;
-  border-top: 2px solid #bdc3c7;
-  border-bottom: 2px solid #bdc3c7;
-}
-
-.report-table-vis .subtotal-row td {
-  padding: 14px 12px;
-  color: #2c3e50;
-  font-size: 13px;
-}
-
-.report-table-vis .subtotal-row .subtotal-label {
-  font-style: italic;
-  color: #5d6d7e;
-}
-
-/* ================================================
-   GRAND TOTAL ROW (FOOTER)
-   ================================================ */
-
-.report-table-vis .total-row {
-  background: #C8F3D3;      
-  font-weight: 700;
-  border-top: 3px solid #e74c3c;
-  border-bottom: 3px solid #e74c3c;
-  text-transform: none;      
-}
-
-.report-table-vis .total-row td {
-  padding: 16px 12px;
-  color: #000;              
   font-size: 14px;
   letter-spacing: 0.5px;
+  position: sticky;
+  top: -1px;
+  z-index: 3;
 }
 
-/* ================================================
-   conditional formats, pivot cells, states, responsive, print
-   ================================================ */
+.headerCell.dimension {
+  background-color: #A8E6B8;
+  border-right: 1px solid #1e40af; 
+}
 
-.report-table-vis .positive-value { color: #27ae60; font-weight: 600; }
-.report-table-vis .negative-value { color: #e74c3c; font-weight: 600; }
-.report-table-vis .neutral-value { color: #7f8c8d; }
+.headerCell.pivot {
+  background-color: #A8E6B8;
+  border-right: 1px solid #1e40af; 
+}
 
-.report-table-vis .variance-positive::before { content: "▲ "; color: #27ae60; font-size: 10px; }
-.report-table-vis .variance-negative::before { content: "▼ "; color: #e74c3c; font-size: 10px; }
+.headerCell.measure {
+  background-color: #A8E6B8;
+  border-left: 1px solid #1e40af; 
+}
 
-.report-table-vis.transposed tbody tr:first-child td {
-  background: linear-gradient(180deg, #ecf0f1 0%, #e8ebed 100%);
+.headerCell.measure.calculation {
+  background-color: #A8E6B8;
+  border-left: 1px solid #059669;
+}
+
+.headerCell.transposed.dimension {
+  background-color: #A8E6B8;
+}
+
+.headerCell.transposed.dimension.merged {
+  background-color: #A8E6B8 !important;
+}
+
+.rowCell {
+  vertical-align: middle;
+  padding: 4px 16px;
+  min-height: 21px;
+  border-bottom: 1px solid #e5e7eb; 
+  background-color: #ffffff;
+}
+
+.rowCell.merged {
+  background-color: #ffffff !important;
+}
+
+.indexCell.transposed {
   font-weight: 600;
-  color: #2c3e50;
-  border-bottom: 2px solid #bdc3c7;
 }
 
-.report-table-vis .pivot-header {
-  background: linear-gradient(180deg, #5d6d7e 0%, #4a5c6e 100%);
+.indexCell.transposed.pivot {
+  background-color: #1e3a8a;
   color: #ffffff;
+}
+
+.indexCell.transposed.dimension {
+  background-color: #A8E6B8;
+  color: #ffffff;
+}
+
+.indexCell.transposed.measure {
+  background-color: #0064E0;
+  color: #ffffff;
+}
+
+.indexCell.transposed.calculation {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.indexCell.transposed.pivot.merged {
+  background-color: #1e3a8a !important;
+}
+
+.indexCell.transposed.dimension.merged {
+  background-color: #A8E6B8 !important;
+}
+
+.indexCell.transposed.measure.merged {
+  background-color: #3b82f6 !important;
+}
+
+.indexCell.transposed.calculation.merged {
+  background-color: #10b981 !important;
+}
+
+.nonNumeric {
+  text-align: left;
+}
+
+.numeric {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.negative {
+  color: #dc2626;
   font-weight: 600;
-  text-align: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.report-table-vis .pivot-cell {
-  text-align: center;
-  background-color: rgba(236, 240, 241, 0.3);
-}
-
-.report-table-vis .currency { font-variant-numeric: tabular-nums; }
-
-.report-table-vis .percentage::after {
-  content: "%";
-  color: #95a5a6;
-  margin-left: 2px;
-}
-
-.report-table-vis .highlight {
-  background-color: #fff9e6;
-  border-left: 3px solid #f39c12;
-  font-weight: 600;
-}
-
-.report-table-vis .drillable-link {
-  color: #3498db;
-  text-decoration: none;
-  cursor: pointer;
-  border-bottom: 1px dashed #3498db;
-  transition: all 0.2s ease;
-}
-
-.report-table-vis .drillable-link:hover {
-  color: #2980b9;
-  border-bottom: 1px solid #2980b9;
-  background-color: rgba(52, 152, 219, 0.05);
-}
-
-@media screen and (max-width: 768px) {
-  .report-table-vis { font-size: 11px; }
-  .report-table-vis thead th,
-  .report-table-vis tbody td { padding: 8px 6px; }
-  .report-table-vis .header-row th { padding: 10px 6px; }
-}
-
-@media print {
-  .report-table-vis { box-shadow: none; border: 1px solid #bdc3c7; }
-  .report-table-vis tbody tr:hover {
-    background-color: inherit;
-    box-shadow: none;
-  }
-  .report-table-vis tbody tr:nth-child(even) {
-    background-color: #f5f5f5;
-  }
-}
-
-.report-table-vis .no-data {
-  padding: 40px 20px;
-  text-align: center;
-  color: #95a5a6;
+.estimate {
+  color: #9ca3af !important;
   font-style: italic;
-  background-color: #fafafa;
-  border: 2px dashed #e8e8e8;
 }
 
-.report-table-vis .loading {
-  opacity: 0.5;
-  pointer-events: none;
+.singleIndex {
+  padding-left: 24px !important;
 }
 
-.report-table-vis .loading::after {
-  content: "Loading data...";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #34495e;
+.subtotal {
+  font-style: normal;
   font-weight: 600;
+  background-color: #e5e7eb !important;
+  color: #1f2937;
+  z-index: 2 !important;
+}
+
+.total {
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  border-top: 3px solid #1e3a8a !important;
+  font-weight: 700 !important;
+  color: #1e3a8a;
+  background-color: #ffffff !important;
+}
+
+.total.transposed {
+  border-top: 0px !important;
+  border-left: 3px solid #1e3a8a !important;
+  background: #dbeafe;
+}
+
+.rectElem.animated {
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 4px;
 }
