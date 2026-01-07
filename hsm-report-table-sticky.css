@@ -96,10 +96,6 @@ th.headerCell {
   background-color: #ffffff;
 }
 
-.rowCell:nth-child(even) {
-  background-color: #f9fafb;
-}
-
 .rowCell.merged {
   background-color: #ffffff !important;
 }
@@ -119,7 +115,7 @@ th.headerCell {
 }
 
 .indexCell.transposed.measure {
-  background-color: #3b82f6;
+  background-color: #0064E0;
   color: #ffffff;
 }
 
