@@ -172,6 +172,7 @@ th.headerCell {
   font-weight: 600;
   background-color: #e5e7eb !important;
   color: #1f2937;
+  z-index: 2 !important;
 }
 
 .total {
