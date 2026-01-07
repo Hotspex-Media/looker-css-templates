@@ -55,6 +55,9 @@ th.headerCell {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 .headerCell.dimension {
@@ -177,7 +180,6 @@ th.headerCell {
   z-index: 3;
   border-top: 3px solid #1e3a8a !important;
   font-weight: 700 !important;
-  background-color: #dbeafe;
   color: #1e3a8a;
 }
 
