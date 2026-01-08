@@ -61,6 +61,7 @@ th.headerCell {
 
 .headerCell.dimension {
   background-color: #A8E6B8;
+  border-right: 1px solid #000000;
 }
 
 .headerCell.pivot {
